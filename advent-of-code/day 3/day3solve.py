@@ -2,7 +2,7 @@
 https://adventofcode.com/2021/day/3
 
 ****
-1) Check power consumption (PC)
+1) Check power consumption (PC) -> 
 2) Generate two new binary numbers
     a) Gamma rate
     b) Epsilon rate
@@ -19,7 +19,7 @@ https://adventofcode.com/2021/day/3
 
 #! Power Consumption:
     - Multiply the DECIMAL values of Gamma & Epsilon together to get power conumption
-
+`
 #! Binary numbers are 12 bits long
 '''
 
@@ -36,11 +36,20 @@ if __name__ == '__main__':
     num_ones = 0
     num_zeros = 0
 
+    
+
+    stuff = list()
     with open('input.txt') as file:
-        numbers = file.read().split("\n")   # Generates list of STRINGS -- binary numbers
+        
+        while True:
+            fuck = file.readline()
 
-        # Will count from 0 -> 11 1k number of times
-        for num in range(len(numbers)):
-            for character in range(12):
-                print(character)
+            if not fuck:
+                break
+            line = "{}".format(fuck.strip())
+            stuff.append(int(line))
 
+    for num in stuff:
+        
+
+    
