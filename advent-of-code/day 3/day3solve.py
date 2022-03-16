@@ -51,5 +51,3 @@ if __name__ == '__main__':
 
     for num in stuff:
         
-
-    
